@@ -1,0 +1,24 @@
+{
+  "name": "javva-travel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobyCigar/javva-travel-wordpress-themes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RobyCigar/javva-travel-wordpress-themes/issues"
+  },
+  "homepage": "https://github.com/RobyCigar/javva-travel-wordpress-themes#readme",
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.17.2",
+    "prettier": "^2.3.2"
+  }
+}
