@@ -8,4 +8,4 @@
 						comments_template();
 					}
 				}
-	?>
+?>

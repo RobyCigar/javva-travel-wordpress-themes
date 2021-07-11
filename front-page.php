@@ -1,57 +1,31 @@
-<?php
+<?php get_header(); ?>
+<?php get_template_part( 'template-parts/content/content-carousel' ); ?>
 
-get_header();
-get_template_part("template-parts/hero");
-?>
-
-<?php if (have_posts()): ?>
-<?php while (have_posts()):
-  the_post(); ?>
-    <div id="post">
-        <h2><a href="<?php the_permalink(); ?>"></a><?php the_title(); ?></h2>
-        <div>Penulis <?php the_author_posts_link(); ?>
-            tanggal dibuat <a href="<?php the_permalink(); ?>"><?php the_time(
-  "l F d, Y"
-); ?></a>
-    </div>
-  <?php
-  the_content();
-  next_post_link();
-  ?>
-<?php
-endwhile; ?>
-    <?php else: ?> 
-            <p>No posts were found. Sorry!")</p>
-    <?php endif; ?>
-    </h1>
-
-    <?php // the query
-// the query
-?>$wpb_all_query = new WP_Query([
-      "post_type" => "post",
-      "post_status" => "publish",
-      "posts_per_page" => -1,
-    ]); ?>
- 
-<?php if ($wpb_all_query->have_posts()): ?>
- 
-<ul>
- 
-    <!-- the loop -->
-    <?php while ($wpb_all_query->have_posts()):
-      $wpb_all_query->the_post(); ?>
-        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-    <?php
-    endwhile; ?>
-    <!-- end of the loop -->
- 
-</ul>
- 
-    <?php wp_reset_postdata(); ?>
- 
-<?php else: ?>
-    <p><?php _e("Sorry, no posts matched your criteria."); ?></p>
-<?php endif; ?>
-
+ <?php 
+ // Define our WP Query Parameters
+ $the_query = new WP_Query( 'posts_per_page=5' ); ?>
+   
+  
+ <?php 
+ // Start our WP Query
+ while ($the_query -> have_posts()) : $the_query -> the_post(); 
+ // Display the Post Title with Hyperlink
+ ?>
+   
+  
+ <li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
+   
+  
+ <li><?php 
+ // Display the Post Excerpt
+ the_excerpt(__('(more…)')); ?></li>
+   
+  
+ <?php 
+ // Repeat the process and reset once it hits the limit
+ endwhile;
+ wp_reset_postdata();
+ ?>
+ </ul>
 
 <?php get_footer(); ?>
