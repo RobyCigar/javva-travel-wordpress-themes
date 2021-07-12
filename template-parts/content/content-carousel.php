@@ -1,9 +1,9 @@
-<div class="carousel-text">
+<div class="carousel-text mt-5">
   <h1>Sugeng Rawuh Ing Javva Travel</h1>
-  <p class="my-3">ꦲꦶꦁ​​ꦔꦂꦱ​ꦱꦸꦁ​​ꦠꦸꦭꦝ​ꦲꦶꦁ​​ꦩꦢꦾ​ꦩꦔꦸꦤ꧀​ꦏꦂꦱ​ꦠꦸꦠ꧀​ꦮꦸꦫꦶ​ꦲꦤ꧀ꦢꦪꦤꦶ​ꦲꦶꦁ​​ꦔꦂꦱ​ꦱꦸꦁ​​ꦠꦸꦭꦝ​ꦲꦶꦁ​​ꦩꦢꦾ​ꦩꦔꦸꦤ꧀​ꦏꦂꦱ​ꦠꦸꦠ꧀​ꦮꦸꦫꦶ​ꦲꦤ꧀ꦢꦪꦤꦶ​ꦲꦶꦁ​​ꦔꦂꦱ​ꦱꦸꦁ​​ꦠꦸꦭꦝ​</p>
+  <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.​</p>
   <div class="mt-5">
-    <button type="button" class="btn btn-primary btn-lg mx-2 my-2">Pesen Saiki</button>
-    <button type="button" class="btn btn-secondary btn-lg mx-2 my-2">Jasa Liyane</button>
+    <button type="button" class="btn btn-primary btn-lg mx-2 my-2"><i class="bi bi-pencil"></i> Pesen Saiki</button>
+    <button type="button" class="btn btn-secondary btn-lg mx-2 my-2"><i class="bi bi-three-dots-vertical"></i> Jasa Liyane</button>
   </div>
 </div>
 

@@ -1,3 +1,11 @@
+body {
+  font-family: "Poppins";
+}
+
+.navbar {
+  z-index: 20;
+}
+
 .carousel {
     position: relative;
     overflow: hidden;
@@ -24,11 +32,26 @@
 
 .carousel-text > h1 {
     font-size: 60px;
-    font-weight: bold;
+    font-family: 'Inter';
+    font-weight: 900;
 }
 
 .carousel-text > p {
     font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+/* Card content  */
+.wacana {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+/* Single Post  */
+.wp-block-image > img {
+  width: 100%;
+  height: auto;
 }
 
 /* footer */

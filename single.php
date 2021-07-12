@@ -1,15 +1,6 @@
-<?php
-/**
- * The template for displaying all single posts and attachments
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
- */
-  
-get_header(); ?>
+<?php get_header(); ?>
     <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
+        <main id="main" class="mx-auto w-50" role="main">
   
         <?php
         // Start the loop.
@@ -29,12 +20,10 @@ get_header(); ?>
   
             // Previous/next post navigation.
             the_post_navigation( array(
-                'next_text' => '<span class="meta-nav" aria-hidden="true">' . '</span> ' .
-                    '<span class="screen-reader-text">' . __( 'Next post:', 'twentyfifteen' ) . '</span> ' .
-                    '<span class="post-title">%title</span>',
-                'prev_text' => '<span class="meta-nav" aria-hidden="true">' . '</span> ' .
-                    '<span class="screen-reader-text">' . __( 'Previous post:', 'twentyfifteen' ) . '</span> ' .
-                    '<span class="post-title">%title</span>',
+                'class' => "my-4",
+                'screen_reader_text' => 'Navigasi laman',
+                'next_text' => '<p aria-hidden="true">' . '</p> ' . '<span>' . __( 'Next post:' ) . '</span> ' .'<span>%title</span>',
+                'prev_text' => '<p aria-hidden="true">' . '</p> ' . '<span>' . 'Previous post:' . '</span> ' . '<span>%title</span>',
             ) );
   
         // End the loop.
@@ -43,5 +32,5 @@ get_header(); ?>
   
         </main><!-- .site-main -->
     </div><!-- .content-area -->
-  
+
 <?php get_footer(); ?>
