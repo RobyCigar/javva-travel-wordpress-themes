@@ -11,6 +11,7 @@
         <a class="nav-link" href="#">Servis</a>
         <a class="nav-link" href="#">Wacana</a>
         <a class="nav-link" href="#">Liyane</a>
+        <a class="nav-link" href="#">Created by: Rabih Utomo 20.02.0607</a>
       </div>
     </div>
   </div>
